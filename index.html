@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Death Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="glowing-text">💀 Death Clock</h1>
+        <p class="sub-text">Enter your details and reveal your fate...</p>
+
+        <label>Date of Birth:</label>
+        <input type="date" id="dob">
+
+        <label>Drug Usage (0-10):</label>
+        <input type="number" id="drug" min="0" max="10" value="0">
+
+        <label>Smoking (0-10):</label>
+        <input type="number" id="smoke" min="0" max="10" value="0">
+
+        <label>BMI Risk Factor (0-10):</label>
+        <input type="number" id="bmi" min="0" max="10" value="0">
+
+        <label>Exercise Level (0-10):</label>
+        <input type="number" id="exercise" min="0" max="10" value="0">
+
+        <button class="start-btn" onclick="predictDeath()">Predict Death Date</button>
+
+        <div id="result" class="hidden">
+            <h2 class="glowing-text">☠️ Your Predicted Death Date</h2>
+            <p id="deathDate"></p>
+        </div>
+
+        <a href="home.html" class="back-btn">← Back to Home</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
